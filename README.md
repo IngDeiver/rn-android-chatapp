@@ -13,7 +13,7 @@
 > <span style="color:red"> NOTE: This repository only have the important react files - the reason was GIT have a bug and not allowed push full files</span>.
 
 ### ✨ [Demo](https://youtu.be/A31LKnbus1Q)
- <a href="https://play.google.com/store/apps/details?id=com.ingdeiver.notas">
+ <a href="https://play.google.com/store/apps/details?id=com.ingdeiver.chatapp">
   	<img width="200" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1280px-Google_Play_Store_badge_EN.svg.png">
   </a>
 <br/>
