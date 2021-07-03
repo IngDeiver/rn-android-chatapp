@@ -25,7 +25,7 @@ const getFBCurrentProfile = () => {
 
 const FBLogin = () => {
   return new Promise((resolve, reject) => {
-    LoginManager.logInWithPermissions(['public_profile', 'email'])
+    LoginManager.logInWithPermissions(['public_profile'])
       .then(
         result => {
           if (result.isCancelled) {

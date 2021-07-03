@@ -26,14 +26,13 @@ const ChatContainer = () => {
 
 
   React.useEffect(() => {
-
-    dispatch(resetCounterUnreadMsg({ userId: router.params.to}))
     if (!chatRoom) getMessagesFromRoom()
 
     if (chatRoom) { subscribeToChat() }
 
     return () => {
       if(socket) socket.removeListener('private-message')
+      dispatch(resetCounterUnreadMsg({ userId: router.params.to}))
     }
 
   });

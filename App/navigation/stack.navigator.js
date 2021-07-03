@@ -46,6 +46,8 @@ export default function StackNavigator({ navigation }) {
           tokenUserToSend: data.tokenUserToSend,
         });
       }
+    }else{
+      navigation.navigate(screen);
     }
   };
 
@@ -105,12 +107,13 @@ export default function StackNavigator({ navigation }) {
           headerTintColor: 'white',
         }}>
         <Stack.Screen
-          name={`Hello ${auth?.name.split(' ')[0]}`}
+          name="Users"
           options={{
             headerLeft: () => <HeaderLeft />,
             headerTitleStyle: {
               fontSize: 15,
             },
+            title: `Hello ${auth?.name.split(' ')[0]}`
           }}
           component={Home} // Home/Users
         />
